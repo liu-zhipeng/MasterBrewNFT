@@ -1,0 +1,132 @@
+@import "@styles/global.scss";
+
+.layout {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    color: var(--color-primary);
+    background-color: black;
+    top: 0;
+    box-shadow: 0 12px 41px 24px #000000ed;
+
+    .menuToggleIcon {
+      color: var(--color-primary);
+    }
+
+    .logoText {
+      letter-spacing: 4px;
+      font-size: 0.8rem;
+    }
+
+    .navMenus {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        &.active {
+          color: var(--color-primary);
+        }
+      }
+
+      li {
+        cursor: pointer;
+        // padding: 5px;
+        // margin: 0 8px;
+        font-weight: bold;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+
+        // button {
+        //   background-color: var(--color-primary);
+
+        //   &:hover {
+        //     background-color: var(--color-primary-dark);
+        //   }
+        // }
+      }
+    }
+
+    .signupInputContainer {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .contentWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      padding-top: 64px;
+    }
+  }
+
+  .footerWrapper {
+    background-color: black;
+    box-shadow: 0 -12px 41px 0 #000000ed;
+    position: relative;
+  }
+
+  .footer {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & > div {
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+
+    .iconContainer {
+      cursor: pointer;
+      margin: 0 10px;
+      border-radius: 50%;
+      padding: 5px;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .copyText {
+      font-size: 0.8rem;
+    }
+    .footerNavItem {
+      font-size: 0.8rem;
+      li {
+        cursor: pointer;
+      }
+    }
+    .footerNavHeading {
+      border-bottom: 1px solid var(--color-primary-dark);
+      font-weight: bold;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+    }
+
+    .followText {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+}

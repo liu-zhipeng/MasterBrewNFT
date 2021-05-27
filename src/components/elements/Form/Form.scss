@@ -1,0 +1,67 @@
+.form-box-container {
+  max-width: 600px;
+
+  .form-box {
+    .iconContainer {
+      cursor: pointer;
+      margin: 0 10px;
+      border-radius: 50%;
+      padding: 5px;
+      height: 45px;
+      width: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      svg {
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+
+  .form-input {
+    border: 1px solid rgba(151,151,151,0.5);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: -30px;
+
+    @media (max-width: 639px) {
+      margin-right: 0;
+    }
+
+    &::placeholder {
+      color: #9A9A9A;
+      font-family: Barlow;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 22px;
+    }
+  }
+
+  .btn-signup {
+    border: 1px solid #02813B;
+    border-radius: 30px;
+    height: 50px;
+    background-color: #4DC081;
+    margin-left: -30px;
+
+    color: #001409;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    line-height: 22px;
+
+    @media (max-width: 639px) {
+      margin-left: 0;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

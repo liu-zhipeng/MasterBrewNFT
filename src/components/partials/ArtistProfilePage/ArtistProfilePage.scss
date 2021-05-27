@@ -1,0 +1,102 @@
+@import "@styles/mixins.scss";
+
+.ArtistProfilePage {
+  --img-cover-height: 380px;
+  margin-top: var(--img-cover-height);
+
+  @include belowWidth(md) {
+    margin-top: 450px;
+  }
+
+  @include belowWidth(sm) {
+    margin-top: 340px;
+  }
+
+  .imgCoverContainer {
+    height: var(--img-cover-height);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .socialIcon {
+    width: 50px;
+    @include belowWidth(sm) {
+      width: 40px;
+    }
+  }
+
+  .bioGallery {
+    @include belowWidth(sm) {
+      position: relative;
+    }
+  }
+
+  .bioSocial {
+    @include belowWidth(sm) {
+      position: relative;
+      padding-top: 180px;
+      // @media (max-width: 370px) {
+      //   padding-top: 180px;
+      // }
+      // @media (max-width: 340px) {
+      //   padding-top: 160px;
+      // }
+      // @media (max-width: 300px) {
+      //   padding-top: 170px;
+      // }
+    }
+  }
+
+  .bioBox {
+    @include belowWidth(sm) {
+      // min-height: 500px;
+    }
+  }
+
+  .teamProfileBox {
+    position: absolute;
+    bottom: -7rem;
+    @include belowWidth(sm) {
+      position: static;
+      margin-top: calc(var(--img-cover-height) / 2);
+    }
+
+    > div {
+      max-width: 400px;
+
+      @include belowWidth(sm) {
+        max-width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .artistPortfolioGrid {
+    & > div {
+      display: grid;
+      place-items: center;
+      &::before {
+        // for apsect ratio
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+    }
+
+    .artistCardImg {
+      cursor: pointer;
+    }
+  }
+}

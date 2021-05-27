@@ -1,0 +1,29 @@
+.landerBanner {
+  min-height: 720px;
+
+  background-image: url(/header-image.png);
+  background-size: cover;
+  background-position: left;
+
+  @media (max-width: 1279px) {
+    background-position: 25%;
+  }
+
+  @media (max-width: 639px) {
+    background-image: url(/header-image-mobile.png);
+    min-height: 600px;
+  }
+
+  & > div {
+    & > div {
+      @media (max-width: 639px) {
+        min-height: 600px;
+      }
+    }
+
+    @media (max-width: 639px) {
+      background-color: rgba(0,0,0,0.6);
+      min-height: 600px;
+    }
+  }
+}

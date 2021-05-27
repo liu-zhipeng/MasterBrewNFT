@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-primary: #99fdc7;
+  --color-primary-dark: #4dc081;
+  --color-secondary: #001409;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-heading {
+  @apply font-semibold text-white text-lg tracking-wider;
+}

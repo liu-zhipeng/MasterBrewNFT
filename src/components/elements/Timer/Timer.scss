@@ -1,0 +1,53 @@
+.timer-box-container.global-timer {
+  .timer-box {
+    position: relative;
+
+    &::after {
+      color: #02813B;
+      font-family: Barlow;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 17px;
+      text-align: center;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-40%);
+
+      @media (max-width: 1023px) {
+        top: 105px;
+      }
+    
+      @media (max-width: 639px) {
+        top: 60px;
+      }
+    }
+
+    &.days::after {
+      content: "Days";
+    }
+
+    &.hours::after {
+      content: "Hours";
+    }
+
+    &.minutes::after {
+      content: "Minutes";
+    }
+
+    &.seconds::after {
+      content: "Seconds";
+    }
+
+    .ropes {
+      margin: auto;
+    }
+  }
+
+  .timer-box.white {
+    &::after {
+      color: white;
+    }
+  }
+}

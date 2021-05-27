@@ -1,0 +1,25 @@
+
+
+@import "@styles/mixins";
+
+.homeImageWrapper {
+  min-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .homeImage {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0px 0px 17px var(--color-primary));
+  }
+
+  @media (max-width: 639px) {
+    min-width: auto;
+  }
+}
+
+.blogImage {
+  width: 100%;
+}

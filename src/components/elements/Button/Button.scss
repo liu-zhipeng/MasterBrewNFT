@@ -1,0 +1,15 @@
+.Button {
+  @media (hover: none) {
+    &.outline:hover {
+      background: rgb(0, 0, 0, 0) !important;
+      color: var(--color-primary) !important;
+      border-color: var(--color-primary) !important;
+    }
+
+    &.outline:active {
+      background: var(--color-primary) !important;
+      color: var(--color-secondary) !important;
+      border-color: transparent !important;
+    }
+  }
+}

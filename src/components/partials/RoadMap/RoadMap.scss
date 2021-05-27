@@ -1,0 +1,242 @@
+.Roadmap {
+  .timeLineContainer {
+    max-width: 620px;
+  }
+
+  .timelineOctagonIcon {
+    filter: drop-shadow(0px 0px 5px var(--color-primary-dark));
+    path {
+      stroke-width: 9px;
+      stroke: var(--color-primary);
+    }
+  }
+
+  .timelineStartLine {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(77, 192, 129, 1) 100%
+    );
+  }
+
+  .tiemlineLastLine {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .teamHead {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .teamSubHead {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .roadmap-main-div {
+    margin-right: -34%;
+    margin-top: -85px;
+    text-align: center;
+  }
+  .roadmap-main-div-right {
+    margin-left: -34%;
+    text-align: center;
+    margin-top: -85px;
+  }
+
+  .phaseContainer-active {
+    font-size: 28px;
+    font-weight: 600;
+    background: #66c296;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 6px;
+    margin-top: 10px;
+    color: black;
+  }
+
+  .social-icon-active {
+    height: 27px;
+    margin-right: 5px;
+    margin-top: 4px;
+  }
+
+  .social-icon {
+    height: 27px;
+    margin-right: 5px;
+    margin-top: 4px;
+  }
+
+  .phaseContainer {
+    font-size: 28px;
+    font-weight: 600;
+    // border-color: red;
+    border: 2px solid #ffffff;
+    background: #031208;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 6px;
+    margin-top: 10px;
+    color: #fffcfc;
+  }
+
+  .content-list {
+  }
+  .content-list h3 {
+    display: flex;
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 26%;
+  }
+  .content-list svg {
+    margin-right: 11px;
+  }
+  .content-list b {
+    font-size: 20px;
+  }
+  .content-list p {
+    /* margin-right: -3%; */
+    margin-left: 32%;
+    width: 45%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .date-label {
+    font-size: x-large;
+  }
+  .top-content-date {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: larger;
+    margin-top: -22px;
+    font-style: oblique;
+  }
+
+  .vertical-timeline::before {
+    background: #f1f1f1;
+    width: 2px;
+  }
+  .custome-icon {
+    box-shadow: 0 0 0 4px #66c296, inset 0 2px 0 rgb(0 0 0 / 8%),
+      0 3px 0 4px rgb(0 0 0 / 5%);
+  }
+
+  .custom-verticle-timeline {
+    overflow: hidden;
+    padding-top: 100px;
+    width: 665px;
+  }
+
+  .vertical-timeline-element-content {
+    box-shadow: 0 3px 0 #031208;
+  }
+
+  @media screen and (max-width: 1170px) {
+    .custome-icon {
+      display: none;
+    }
+    .vertical-timeline::before {
+      //  display: none;
+    }
+    .vertical-timeline-element {
+      margin: 5em 0 !important;
+    }
+
+    .vertical-timeline::before {
+      background: #ffffff;
+      width: 2px;
+      margin-left: 45%;
+    }
+
+    .vertical-timeline-element-content .bounce-in {
+      margin-left: 0px !important;
+      padding: 0px !important;
+    }
+    .customTimeElement .bounce-in {
+      margin-left: 0px !important;
+      padding: 0px !important;
+    }
+
+    .phaseContainer-active {
+      font-size: 28px;
+      font-weight: 600;
+      background: #66c296;
+      width: 80%;
+      margin-left: 10%;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 6px;
+      margin-top: 10px;
+      color: black;
+    }
+    .phaseContainer {
+      font-size: 28px;
+      font-weight: 600;
+      border: 2px solid #ffffff;
+      background: #031208;
+      width: 80%;
+      margin-left: 10%;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 6px;
+      margin-top: 10px;
+      color: #fffcfc;
+    }
+
+    .content-list h3 {
+      margin-top: 15px;
+      text-align: left;
+      margin-left: 10%;
+    }
+
+    .content-list p {
+      // margin-right: 15%;
+      // margin-left: 7%;
+      width: 72%;
+      margin-left: 19%;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    .top-content-date {
+      display: none !important;
+      color: #93f0a7;
+      font-weight: bold;
+    }
+
+    .roadmap-main-div {
+      padding-top: 25px;
+      margin-right: 0%;
+      margin-top: 0px;
+      text-align: center;
+    }
+    .roadmap-main-div-right {
+      padding-top: 25px;
+      margin-left: 0%;
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    .teamHead {
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}

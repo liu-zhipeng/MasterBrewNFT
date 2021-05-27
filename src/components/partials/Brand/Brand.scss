@@ -1,0 +1,29 @@
+.Brand {
+  .spotlightLarge {
+    margin: auto;
+    pointer-events: none;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    @media (min-width: 320px) and (max-width: 767px) {
+      position: initial;
+      transform: none;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      max-width: 70%;
+    }
+  }
+  .brandHead {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+}
+
+.layout .brandsContent {
+  background: url("../../../images/bg-back-start-image.png") center no-repeat;
+  width: 100%;
+  @media (min-width: 1919px) { height: 920px; }
+  background-size: cover;
+}

@@ -1,0 +1,51 @@
+@import "@styles/mixins";
+
+.ArtistsPage {
+  .artistCard {
+    @include belowWidth(sm) {
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  .artistCardImg {
+    height: 250px;
+  }
+  .carouselImg {
+    -webkit-user-drag: none;
+    height: 400px;
+
+    @include belowWidth(md) {
+      height: 300px;
+    }
+
+    @include belowWidth(sm) {
+      height: 200px;
+    }
+  }
+
+  .bioHeight {
+    min-height: 600px;
+
+    @media (min-width: 1536px) {
+      min-height: 460px;
+    }
+
+    @media (max-width: 1024px) {
+      min-height: 700px;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 900px;
+    }
+
+    @media (max-width: 484px) {
+      min-height: 800px;
+    }
+
+    @media (max-width: 300px) {
+      min-height: 1020px;
+    }
+
+  }
+}

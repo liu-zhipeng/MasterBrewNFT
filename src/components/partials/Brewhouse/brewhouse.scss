@@ -1,0 +1,93 @@
+.Brewhouse {
+  .users {
+  }
+  .teamHeadContainer {
+  }
+  .teamHead {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .teamSubHead {
+    // font-optical-sizing: none;
+    font-size: x-large;
+    font-family: Jazz LET, fantasy;
+    border: red;
+    color: var(--color-primary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .content-side h2 {
+    color: #99eebb;
+    font-size: x-large;
+  }
+
+  .content-side p {
+    color: #ffffff;
+    font-size: large;
+  }
+
+  .alt-black-bd {
+    background: black;
+  }
+
+  .content-frame {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .left-side-view {
+    margin-right: 10%;
+  }
+
+  .right-side-view {
+    margin-left: 10%;
+  }
+
+  .custome-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  // * {
+  //     box-sizing: border-box;
+  // }
+  // .container {
+  //     width:100%;
+  //     max-width:600px;
+  //     // border:2px solid black;
+  //     margin: 0 auto;
+  //     padding:10px;
+  // }
+  // .row {
+  //     height:100px; /*set height*/
+  //     // border:2px solid blue;
+  //     width:100%;
+  //     margin-bottom:10px;
+  //     padding:10px;
+  // }
+  // .col1 {
+  //     // border:2px solid red;
+  //     width:100%;
+  //     height:100%;
+  // }
+  // .col2 {
+  //     // border:2px solid green;
+  //     width:49%;
+  //     float:left;
+  //     height:100%;
+  //     margin-right:2%;
+  // }
+  // .col2:last-child {margin-right:0;  }
+  // .col3 {
+  //     // border:2px solid brown;
+  //     width:32%;
+  //     float:left;
+  //     height:100%;
+  //     margin-right:2%;
+  // }
+  // .col3:last-child {margin-right:0;  }
+}

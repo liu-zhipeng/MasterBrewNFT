@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "baseUrl": ".",
+    "target": "es6",
+    /* Base directory to resolve non-absolute module names. */
+    "paths": {
+      "@partials/*": ["src/components/partials/*"],
+      "@elements/*": ["src/components/elements/*"],
+      "@components/*": ["src/components/*"],
+      "@images/*": ["src/images/*"],
+      "@styles/*": ["src/styles/*"],
+      "@util": ["src/util"],
+      "@util/*": ["src/util/*"],
+      "@assets/*": ["src/assets/*"],
+      "@static/*": ["static/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

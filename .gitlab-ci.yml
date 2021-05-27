@@ -1,0 +1,20 @@
+stages:
+  - build
+
+install_dependencies_stage:
+    stage: build
+    image: node:14.15.3
+    tags:
+      - build
+      - node
+    only:
+        - genesis
+    artifacts:
+        untracked: true
+    script:
+        - apt-get -y update && apt-get -y install sshpass 
+        - sshpass -p "$SSH_PASSWORD" ssh "$SSH_USERNAME"@"$SSH_IP"
+        - cd "webapps/masterbrews-stage" 
+        - git reset --hard
+        - git pull origin genesis
+        - npm install
